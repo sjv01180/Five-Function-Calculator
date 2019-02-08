@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:text="@string/display"
         android:textSize="@dimen/display_fs"
-        android:gravity="end"/>
+        android:gravity="end"
+        android:textColor="@color/colorPrimaryDark"/>
 
     <GridLayout
         android:layout_width="wrap_content"
