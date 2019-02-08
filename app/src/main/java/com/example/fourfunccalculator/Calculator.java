@@ -2,6 +2,7 @@ package com.example.fourfunccalculator;
 
 /**
  * Created by jeremy on 1/29/17.
+ * Used by Samuel Velasquez on 02/07/2019
  */
 
 /**
@@ -89,6 +90,7 @@ public class Calculator {
             case 'x':
             case '/':
             case '=':
+            case '%':
                 operation(key);
                 break;
             default:
@@ -145,6 +147,9 @@ public class Calculator {
                 break;
             case '=':
                 register = readDisplay();
+                break;
+            case '%':
+                register = (double) ((int) register % (int) readDisplay());
                 break;
             default:
                 // Something went wrong, just do nothing

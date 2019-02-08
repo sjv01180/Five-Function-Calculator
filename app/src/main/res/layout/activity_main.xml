@@ -1,27 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:padding="@dimen/default_pad"
+    android:orientation="vertical">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/display"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/display"
+        android:textSize="@dimen/display_fs"
+        android:gravity="end"/>
 
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:columnCount="4">
 
-        android:orientation="vertical">
+                                        <!--Button: Clear-->
+        <Button android:onClick="calcClick"
+            android:id="@+id/btn_clr"
+            android:text="@string/btn_clr"
+            android:textSize="@dimen/default_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
+                                        <!--Button: Modulo-->
+        <Button android:onClick="calcClick"
+            android:id="@+id/btn_mod"
+            android:text="@string/btn_mod"
+            android:textSize="@dimen/default_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+                                        <!--Button: Divide-->
+        <Button android:onClick="calcClick"
+            android:id="@+id/btn_div"
+            android:text="@string/btn_div"
+            android:textSize="@dimen/default_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+                                        <!--Button: All Clear-->
+        <Button android:onClick="calcClick"
+            android:id="@+id/btn_AC"
+            android:text="@string/btn_ac"
+            android:textSize="@dimen/default_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+                                        <!--Button: Seven-->
+        <Button android:onClick="calcClick"
+            android:id="@+id/btn_seven"
+            android:text="@string/btn_seven"
+            android:textSize="@dimen/default_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+                                        <!--Button: Eight-->
+        <Button android:onClick="calcClick"
+            android:id="@+id/btn_eight"
+            android:text="@string/btn_eight"
+            android:textSize="@dimen/default_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+                                        <!--Button: Nine-->
+        <Button android:onClick="calcClick"
+            android:id="@+id/btn_nine"
+            android:text="@string/btn_nine"
+            android:textSize="@dimen/default_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+                                        <!--Button: Multiply-->
+        <Button android:onClick="calcClick"
+            android:id="@+id/btn_multi"
+            android:text="@string/btn_multi"
+            android:textSize="@dimen/default_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+                                        <!--Button: Four-->
+        <Button android:onClick="calcClick"
+            android:id="@+id/btn_four"
+            android:text="@string/btn_four"
+            android:textSize="@dimen/default_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+                                        <!--Button: Five-->
+        <Button android:onClick="calcClick"
+            android:id="@+id/btn_five"
+            android:text="@string/btn_five"
+            android:textSize="@dimen/default_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+                                        <!--Button: Six-->
+        <Button android:onClick="calcClick"
+            android:id="@+id/btn_six"
+            android:text="@string/btn_six"
+            android:textSize="@dimen/default_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+                                        <!--Button: Add-->
+        <Button android:onClick="calcClick"
+            android:id="@+id/btn_add"
+            android:text="@string/btn_add"
+            android:textSize="@dimen/default_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+                                        <!--Button: One-->
+        <Button  android:onClick="calcClick"
+            android:id="@+id/btn_one"
+            android:text="@string/btn_one"
+            android:textSize="@dimen/default_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+                                        <!--Button: Two-->
+        <Button android:onClick="calcClick"
+            android:id="@+id/btn_two"
+            android:text="@string/btn_two"
+            android:textSize="@dimen/default_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+                                        <!--Button: Three-->
+        <Button android:onClick="calcClick"
+            android:id="@+id/btn_three"
+            android:text="@string/btn_three"
+            android:textSize="@dimen/default_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+                                        <!--Button: Subtract-->
+        <Button  android:onClick="calcClick"
+            android:id="@+id/btn_sub"
+            android:text="@string/btn_sub"
+            android:textSize="@dimen/default_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+                                        <!--Button: Zero-->
+        <Button android:onClick="calcClick"
+            android:id="@+id/btn_zero"
+            android:text="@string/btn_zero"
+            android:textSize="@dimen/default_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"/>
+
+                                        <!--Button: Decimal-->
+        <Button android:onClick="calcClick"
+            android:id="@+id/btn_decimal"
+            android:text="@string/btn_deci"
+            android:textSize="@dimen/default_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+                                        <!--Button: Equals-->
+        <Button android:onClick="calcClick"
+            android:id="@+id/btn_eql"
+            android:text="@string/btn_eql"
+            android:textSize="@dimen/default_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
     </GridLayout>
 
 </LinearLayout>

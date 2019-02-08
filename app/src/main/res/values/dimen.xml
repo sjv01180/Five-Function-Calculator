@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_fs">50sp</dimen>
+    <dimen name="display_fs">60sp</dimen>
+    <dimen name="default_pad">10dp</dimen>
+</resources>
